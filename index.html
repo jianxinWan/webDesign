@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>西安印象</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/iconv.png">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link href="https://cdn.bootcss.com/Swiper/4.1.6/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/4.1.6/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/min.css">
+    <style>
+        .jq22-demo{ text-align: center; margin-top: 30px; }
+        .jq22-demo a{ padding-left: 20px; padding-right: 20px; }
+        #logo {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYlJREFUeNrcV4FtgzAQBJQB3AlCN0gmiNkgnaBhg25QMUHSCUInKJkgZgNGyAhskP6r58qJsCEUE5qXLMvI8t//359NGDhMytWepk3gz7LQ4VzSdAw8WxTc2WYd9ymlymQop5Td87/IQEVDR137AhAahPNlFZWvtpVgRgtmulcA5CO5BmFyQHou8wJjmm3YB0B9TwAp1fKJ5mcap7EB7Mh5/qNKJTv/GAuAQsSHq+/zMaQ4R6RfzGRqpwJrZvWbbwDaGeuEwLc1hmm6HNshS8BMTxG5aDkjxv5sSAAFIo07nsPR7/p0RuSI6vWGcwQ4UQwFQPaQ6FVDp0z/RTRJAMxovj75rbDsqP0pnmyVjYikIawjR1z/TgA5HaYguRXEqO29qCXa1Y6iiVuRZaNr3dQxrrUTfGg+j8wfBtwBJ+hBm8pxBj7hfNsAWpdncZm60grA5EOG/n5H+mIAEx2y8wtAl/XWLhCIiCW5pPECciZ9ROcvPyacuj3Y/Pg6MDqAzLOP3EZAtm8BBgDqc3bEpb6xyQAAAABJRU5ErkJggg==') no-repeat center center transparent;
+            background-size: contain;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: relative;
+            bottom: -4px;
+            left: -4px;
+        }
+
+        .elem, .elem * {
+            box-sizing: border-box;
+            margin: 0 !important;
+        }
+        .elem {
+            display: inline-block;
+            font-size: 0;
+            width: 33%;
+            border: 20px solid transparent;
+            border-bottom: none;
+            background: #fff;
+            padding: 10px;
+            height: auto;
+            background-clip: padding-box;
+        }
+        .elem > span {
+            display: block;
+            cursor: pointer;
+            height: 0;
+            padding-bottom:	70%;
+            background-size: cover;
+            background-position: center center;
+        }
+        .lcl_fade_oc.lcl_pre_show #lcl_overlay,
+        .lcl_fade_oc.lcl_pre_show #lcl_window,
+        .lcl_fade_oc.lcl_is_closing #lcl_overlay,
+        .lcl_fade_oc.lcl_is_closing #lcl_window {
+            opacity: 0 !important;
+        }
+        .lcl_fade_oc.lcl_is_closing #lcl_overlay {
+            -webkit-transition-delay: .15s !important;
+            transition-delay: .15s !important;
+        }
+        .container{
+            margin-left: -25rem;
+        }
+    </style>
+</head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"  id="slide1">
+                    <div class="wrap header">
+                        <div class="slide1-text">
+                            <div class="headerFix">
+                                <div class="slide1-header">
+                                    <div class="head-link">
+                                        <div class="header-leftLogo">
+                                            <img src="img/indexTit.png" width="auto" height="100%">
+                                        </div>
+                                        <div class="pageLink">
+                                            <ul>
+                                                <li class="indexLink">首页</li>
+                                                <li class="historyLink">历史</li>
+                                                <li class="foodLink">美食</li>
+                                                <li class="tripLink">旅游</li>
+                                                <li class="messageLink">你的印象</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide1-content">
+                            <div class="content-left">
+                                <div class="slide-title">
+                                    <div class="xian-font">
+                                        <img src="img/font.png">
+                                    </div>
+                                    <div class="xian-introduce">
+                                        <span>
+                                                &emsp;唐长安城，隋朝称之为大兴城，其兴建于隋朝，唐朝易名为长安城，为隋唐两朝的首都，
+                                                是中国历史上规模最为宏伟壮观的都城，也是当时世界上规模最大的城市。它是隋文帝君臣
+                                                建立的中国古代最宏伟的都城，反映出大一统王朝的宏伟气魄
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-right">
+                                <div class="right-tang">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"  id="slide2" >
+                    <div class="History">
+                        <div class="historyLucency">
+                            <div class="headerFix">
+                                <div class="slide1-header">
+                                    <div class="head-link">
+                                        <div class="header-leftLogo">
+                                            <img src="img/indexTit.png" width="auto" height="100%">
+                                        </div>
+                                        <div class="pageLink">
+                                            <ul>
+                                                <li class="indexLink">首页</li>
+                                                <li class="historyLink">历史</li>
+                                                <li class="foodLink">美食</li>
+                                                <li class="tripLink">旅游</li>
+                                                <li class="messageLink">你的印象</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="historyContent">
+                                <div class="historyTit">
+                                    <img src="img/historyTit.png">
+                                </div>
+                                <div class="ellipaceDiv">
+                                    <div class="historyBlock" style="visibility: hidden">
+                                        <div class="button"></div>
+                                        <div class="HistoryTopInfo">
+                                            <div class="historyBox historyImg historyBox1">
+                                                <img src="images/dynasty1.webp">
+                                            </div>
+                                            <div class="historyBox historyBox2">
+                                                <div class="boxContent">
+                                                    <img src="img/dynastyTit1.png" style="width: auto;height:6rem">
+                                                    <p class="dynastyInfo historyInfoBox1">
+                                                        &emsp;秦朝（前221—前206年），中国历史上第一个以汉族为主体，多民族统一的专制主义中央集权国家。从公元前230年到前221年秦始皇嬴政先后灭掉了关东六国，完成国家统一，后北击匈奴，南服百越。首创了皇帝制度、以三公九卿为代表的中央官制，以及郡县制，彻底打破自西周以来的世卿世禄制度，维护国家的统一、强化中央对地方的控制。奠定中国大一统王朝的统治基础，故有说法“百代犹得秦政法”。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="HistoryButtomInfo">
+                                            <div class="historyBox historyBox3" id="leftAndUp">
+                                                <div class="historyBoxLeft" id="historyBoxLeft">
+                                                    <img src="img/dynastyTit2.png" style="width: auto;height:6rem">
+                                                    <p class="dynastyInfo historyInfoBox2">&emsp;秦末，天下揭竿而起，经过楚汉之争，刘邦击败项羽 [3]  ，公元前202年刘邦称帝国号汉，定都长安（今汉长安城遗址）史称西汉。西汉在诸多制度上承袭了秦制，汉初实行轻徭薄赋、休养生息的国策，社会经济迅速恢复，农业、手工业及商业空前繁荣，史称文景之治。</p>
+                                                </div>
+                                                <div class="historyBoxRight">
+                                                </div>
+                                            </div>
+                                            <div class="historyBox historyImg historyBox4">
+                                                <img src="images/dynasty2.webp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="HistoryRightFont"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"  id="slide3" >
+                    <div class="page-food">
+                        <div class="headerFix">
+                            <div class="slide1-header">
+                                <div class="head-link">
+                                    <div class="header-leftLogo">
+                                        <img src="img/indexTit.png" width="auto" height="100%">
+                                    </div>
+                                    <div class="pageLink">
+                                        <ul>
+                                            <li class="indexLink">首页</li>
+                                            <li class="historyLink">历史</li>
+                                            <li class="foodLink">美食</li>
+                                            <li class="tripLink">旅游</li>
+                                            <li class="messageLink">你的印象</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="food-waper">
+                            <div class="food-leftTit">
+                                <div class="foodTitWarp">
+                                    <img class="foodTitFont" src="img/footTit.png">
+                                </div>
+                                <div class="poem">
+                                    <div class="poemWords">
+                                        <img class="firstPoem" src="img/poem1%20(3).png">
+                                        <img class="secondPoem" src="img/poem1%20(4).png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="food-rightContent">
+                                <div class="food-all-picture" style="visibility: hidden">
+                                    <div class="food-fontsTop">
+                                        <img src="img/food-font2.png" width="auto" height="100%">
+                                    </div>
+                                    <div id="content">
+                                        <div id="littleBoxes" class="littleBoxes">
+                                            <div class="boxlink bg1" style="top:0px;left:0px;">
+                                                <a href="">凉皮</a>
+                                                <div class="boxcontent">
+                                                    <p>
+                                                        <br/>
+                                                        &emsp;西安凉皮是一种特色小吃面食。西安市面上的凉皮大概分三种：岐山擀面皮、汉中热面皮和秦镇米面凉皮。其中以岐山擀面皮最受欢迎。
+                                                        因为擀面皮是从唐代冷淘面演变而来，其面皮选料精良，工艺严谨，调味讲究，以“白、薄、光、软、筋、香”而闻名，凉爽可口，
+                                                        具有筋斗、柔软、凉香、酸辣可口、四季皆宜之特点。在古代，擀面皮乃是给宫里的御供食品，故西府人又称擀面皮为“御京粉”。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bg5" style="background-position:-90px 0;top:0px;left:95px;"></div>
+                                            <div class="bg5" style="background-position:-180px 0;top:0px;left:190px;"></div>
+                                            <div class="bg5" style="background-position:-270px 0;top:0px;left:285px;"></div>
+
+                                            <div class="bg5" style="background-position:0 -90px;top:95px;left:0px;"></div>
+                                            <div class="boxlink bg2" style="top:95px;left:95px;">
+                                                <a href="">肉夹馍</a>
+                                                <div class="boxcontent">
+                                                    <p>
+                                                        &emsp;肉夹馍，实际是两种食物的绝妙组合：腊汁肉，白吉馍。肉夹馍合腊汁肉、白吉馍为一体，互为烘托，将各自滋味发挥到极致。馍香肉酥，肥而不腻，
+                                                        回味无穷。腊汁肉历史悠久，闻名中国，配上白吉馍，有着中式汉堡的美誉，扬名中外，深受人们喜爱。腊汁肉夹馍由三十多种调料精心配制而成，
+                                                        由于选料精细，火功到家，加上使用陈年老汤，因此所制的腊汁肉与众不同，具有色泽红润，气味芬芳，肉质软糯，糜而不烂，浓郁醇香，独特风味。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bg5" style="background-position:-180px -90px;top:95px;left:190px;"></div>
+                                            <div class="bg5" style="background-position:-270px -90px;top:95px;left:285px;"></div>
+
+                                            <div class="bg5" style="background-position:0 -180px;top:190px;left:0px;"></div>
+                                            <div class="bg5" style="background-position:-90px -180px;top:190px;left:95px;"></div>
+                                            <div class="boxlink bg3" style="top:190px;left:190px;">
+                                                <a href="">包子</a>
+                                                <div class="boxcontent">
+                                                    <p>
+                                                        <br/>
+                                                        <br/>
+                                                        &emsp;西安包子是陕西地区的一种小吃早点，深受广大市民的喜爱。油包子油肥不腻，麻香可口。肉包子皮光色白，油润入味。白糖包子，清香沙甜。
+                                                        地软包子皮松馅软，调料入味，清淡可口。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bg5" style="background-position:-270px -180px;top:190px;left:285px;"></div>
+
+                                            <div class="bg5" style="background-position:0 -270px;top:285px;left:0px;"></div>
+                                            <div class="bg5" style="background-position:-90px -270px;top:285px;left:95px;"></div>
+                                            <div class="bg5" style="background-position:-180px -270px;top:285px;left:190px;"></div>
+                                            <div class="boxlink bg4" style="top:285px;left:285px;">
+                                                <a href="">胡辣汤</a>
+                                                <div class="boxcontent">
+                                                    <p>&emsp;胡辣汤，又名糊辣汤，中原知名小吃，最早起源于河南省漯河市舞阳县北舞渡镇是中国北方早餐中常见的传统汤类名吃。\n' +
+                                                        '胡辣汤的主要制作材料有胡辣汤料、胡椒、辣椒、熟羊（牛）肉、羊骨高汤、面筋、面粉、粉条、黄花菜、木耳等。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="foodBtn"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"  id="slide4" >
+                    <div class="page-trip">
+                        <div class="headerFix">
+                            <div class="slide1-header">
+                                <div class="head-link">
+                                    <div class="header-leftLogo">
+                                        <img src="img/indexTit.png" width="auto" height="100%">
+                                    </div>
+                                    <div class="pageLink">
+                                        <ul>
+                                            <li class="indexLink">首页</li>
+                                            <li class="historyLink">历史</li>
+                                            <li class="foodLink">美食</li>
+                                            <li class="tripLink">旅游</li>
+                                            <li class="messageLink">你的印象</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tripAll">
+                            <div class="tripLeftTit">
+                                <div class="tripTit">
+                                    <img src="img/tripTit.png">
+                                </div>
+                            </div>
+                            <div class="tripRightTop">
+                                <div class="topRightFont">
+                                    <img src="img/tripTopFont.png">
+                                </div>
+                            </div>
+                            <div class="tripRightSights" style="visibility: hidden">
+                                <div class="container" >
+                                    <div class="content">
+                                        <a class="elem" href="#" title="华清宫（华清池·骊山）景区位于西安城东30公里,&#10与“世界第八大奇迹”——兵马俑相邻。周、秦、&#10汉、隋、唐等历代帝王在此建有离宫别苑。因其亘&#10古不变的温泉资源、烽火戏诸侯的历史典故、唐明皇&#10与杨贵妃的爱情故事、“西安事变”发生地而享誉海&#10内外。"
+                                           data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone" data-lcl-thumb="photo-1476514525535-07fb3b4ae5f1.webp">
+                                            <span style="background-image: url(images/tripSight1.webp)"></span>
+                                        </a>
+                                        <a class="elem" href="#" title="兵马俑，即秦始皇兵马俑，亦简称秦兵马俑或秦俑，&#10第一批全国重点文物保护单位，第一批中国世界遗产，&#10位于今陕西省西安市临潼区秦始皇陵以东1.5千米处的&#10兵马俑坑内" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone" data-lcl-thumb="pictures/thumb/photo-1502082553048-f009c37129b9.jpg">
+                                            <span style="background-image: url(images/tripSight2.webp);"></span>
+                                        </a>
+                                        <a class="elem" href="#" title="大唐芙蓉园位于陕西省西安市城南的曲江开发区，大雁&#10塔东南侧，它是在原唐代芙蓉园遗址以北，仿照唐代&#10皇家园林式样重新建造的，是中国第一个全方位展示&#10盛唐风貌的大型皇家园林式文化主题公园，占地面积&#10一千亩，其中水域面积三百亩。" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone" data-lcl-thumb="pictures/thumb/photo-1442850473887-0fb77cd0b337.jpg">
+                                            <span style="background-image: url(images/tripSight3.webp);"></span>
+                                        </a>
+                                        <a class="elem" href="#" title="陕西历史博物馆，中国第一座大型现代化国家级博物，&#10首批中国“AAAA”级旅游景点，被誉为“古都明珠，&#10华夏宝库”。位于陕西省西安市雁塔区小寨东路91号，&#10大雁塔西北侧" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone" data-lcl-thumb="pictures/thumb/photo-1431794062232-2a99a5431c6c.jpg">
+                                            <span style="background-image: url(images/tripSight4.webp);"></span>
+                                        </a>
+                                        <a class="elem" href="#" title="西安城墙又称西安明城墙，是中国现存规模最大、保&#10存最完整的古代城垣 [1-7]  ，是第一批全国重点文&#10物保护单位、国家AAAA级旅游景区。广义的西安城墙&#10包括西安唐城墙和西安明城墙，但一般特指狭义上的&#10西安明城墙" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone" data-lcl-thumb="pictures/thumb/photo-1432405972618-c60b0225b8f9.jpg">
+                                        <span style="background-image: url(images/tripSight5.webp);"></span>
+                                        </a>
+                                        <a class="elem" href="#" title="西安钟楼位于西安市中心，明城墙内东西南北四条大街&#10的交汇处，是中国现存钟楼中形制最大、保存最完整的&#10一座。建于明太祖洪武十七年（1384年），初建于今广&#10济街口，与鼓楼相对，明神宗万历十年（1582年）整&#10体迁移于今址。" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone" data-lcl-thumb="pictures/thumb/photo-1482192505345-5655af888cc4.jpg">
+                                        <span style="background-image: url(images/tripSight6.webp);"></span>
+                                        </a>
+                                        <br/><br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"  id="slide6" >
+                    <div class="page-message">
+                        <div class="headerFix">
+                            <div class="slide1-header">
+                                <div class="head-link">
+                                    <div class="header-leftLogo">
+                                        <img src="img/indexTit.png" width="auto" height="100%">
+                                    </div>
+                                    <div class="pageLink">
+                                        <ul>
+                                            <li class="indexLink">首页</li>
+                                            <li class="historyLink">历史</li>
+                                            <li class="foodLink">美食</li>
+                                            <li class="tripLink">旅游</li>
+                                            <li class="messageLink">你的印象</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-containerH">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" id="msgPage1">
+                                    <div class="contact">
+                                        <div class="contact-main">
+                                                <h3>留下你的印记</h3>
+                                                <input type="text" value="" class="hola" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+                                                <div class="buttons">
+                                                    <div class="green-button">
+                                                        <div class="contact-button"> <a href="https://github.com/sun111sunshine">上传照片</a> </div>
+                                                        <div class="contact-close sky-close"> <img src="img/close.png" alt=""/> </div>
+                                                        <div class="clear"> </div>
+                                                    </div>
+                                                    <div class="orange-button">
+                                                        <div class="contact-button"> <a href="https://github.com/sun111sunshine">联系我们</a> </div>
+                                                        <div class="contact-close oran-close"><img src="img/close.png" alt=""/></div>
+                                                    </div>
+                                                    <div class="clear"> </div>
+                                                </div>
+                                                <h3>Name</h3>
+                                                <input type="text" name="nickname" id="nameInfo" value="Lorem Ipsum" class="hola" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Lorem Ipsum';}"/>
+                                                <h3>Message</h3>
+                                                <textarea name="wordstext" id="msgInfo"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Leave your message here ....';}"/>Leave your message here ....</textarea>
+
+                                        </div>
+                                        <div class="enviar">
+                                        <div class="contact-check">
+                                            <label class="checkbox"><input type="checkbox" name="checkbox" checked><i> </i>Forgot Password</label>
+                                        </div>
+                                        <div class="contact-enviar">
+                                            <input type="submit" value="Submit" id="submitBtn">
+                                        </div>
+                                        <div class="clear"> </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" id="msgPage2">
+                                    <div class="msgContent" style="visibility: hidden">
+                                        <div class="msgAllInfo">
+                                            <div class="msgHeaderTit">
+                                                <img src="img/msgTit.png" height="100%" width="auto">
+                                            </div>
+                                            <ul class="allMsg">
+                                                <li class="msgList">
+                                                    <div class="leftUserInfo">
+                                                        <div class="userPhoto">
+                                                            <img src="images/tripSight6.webp">
+                                                        </div>
+                                                        <div class="userName">
+                                                            <span>
+                                                                小城大事
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="RightMsg">
+                                                        <span>
+                                                            &emsp;如果说中国是一棵参天大树，西安无疑是树根。十三朝古都、3100多年建城史、世界四大文明古都之一……这里，铭刻着华夏文明久远的璀璨荣耀。这座厚重的城市，历史与未来相互交织与碰撞，如今正朝着国际化大都市的目标迈进。
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="msgList">
+                                                    <div class="leftUserInfo">
+                                                        <div class="userPhoto">
+                                                            <img src="images/tripSight7.webp">
+                                                        </div>
+                                                        <div class="userName">
+                                                            <span>
+                                                                旧
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="RightMsg">
+                                                        <span>
+                                                            &emsp;这是一座唯一我至今还嚷着想回去的城市，可能是因为这座城市里的某一个人，或者某些人，又或者是熟悉了这个城市。西安，在众多人眼中，十三朝古都，钟鼓楼，碑林，古城墙，回民街，古色古香，感觉是一部翻不完的历史。
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="msgList">
+                                                    <div class="leftUserInfo">
+                                                        <div class="userPhoto">
+                                                            <img src="images/tripSight8.webp">
+                                                        </div>
+                                                        <div class="userName">
+                                                            <span>
+                                                                了之
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="RightMsg">
+                                                        <span>
+                                                            &emsp;西安 --- 神奇的旅游胜地，十三朝古都。 一块古老的土地，历史老人曾镌刻了无数的辉煌； 一座年轻的城市，时代之神正编织着美丽的梦想。西安古都，重温历史遗迹，总在幻想着西安这座古都达到模样，朝起朝落，这座古都见证了多少朝代的兴盛衰亡。
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msgRightLink">
+                            <div class="msgPageNav" id="msgPage1Link">
+                                <img src="img/cityIn.png">
+                            </div>
+                            <hr/>
+                            <div class="msgPageNav" id="msgPage2Link">
+                                <img src="img/cityOut.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<audio autoplay="autoplay">-->
+            <!--<source src="./music/bgMusic.mp3" type="audio/mpeg">-->
+        <!--</audio>-->
+        <script>
+            $(document).ready(function(c) {
+                $('.sky-close').on('click', function(c){
+                    $('.green-button').fadeOut('slow', function(c){
+                        $('.green-button').remove();
+                    });
+                });
+                $('.oran-close').on('click', function(c){
+                    $('.orange-button').fadeOut('slow', function(c){
+                        $('.orange-button').remove();
+                    });
+                });
+            });
+        </script>
+        <script src="js/circleMagic.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                /* object to save the initial positions of each box */
+                var divinfo = {"initial": []};
+                /* index of the selected / clicked box */
+                var current = -1;
+
+                /* we save the index,top and left of each one of the boxes */
+                $('#littleBoxes > div').each(function(){
+                    var $this = $(this);
+                    var initial = {
+                        'index' : $this.index(),
+                        'top'     : $this.css('top'),
+                        'left'     : $this.css('left')
+                    };
+                    divinfo.initial.push(initial);
+                });
+
+                /* clcik event for the anchors inside of the boxes */
+                $('#littleBoxes a').bind('click',function(e){
+                    var $this         = $(this);
+                    var $currentBox    = $this.parent();
+                    /* set a z-index lower than all the other boxes,
+                    to see the other boxes animation on the top*/
+                    $currentBox.css('z-index','1');
+
+                    /* if we are clicking on a expanded box : */
+                    if(current == $currentBox.index()){
+                        /* put it back (decrease width,height, and set the top and left like it was before).
+                        the previous positions are saved in the divinfo obj*/
+                        $currentBox.stop().animate({
+                            'top'         : divinfo.initial[$currentBox.index()].top,
+                            'left'        : divinfo.initial[$currentBox.index()].left,
+                            'width'     : '90px',
+                            'height'    : '90px'
+                        },800,'easeOutBack').find('.boxcontent').fadeOut();
+
+
+                        $('#littleBoxes > div').not($currentBox).each(function(){
+                            var $ele         = $(this);
+                            var elemTop     = divinfo.initial[$ele.index()].top;
+                            var elemLeft     = divinfo.initial[$ele.index()].left;
+                            $ele.stop().show().animate({
+                                'top'         : elemTop,
+                                'left'        : elemLeft,
+                                'opacity'    : 1
+                            },800);
+                        });
+                        current = -1;
+                    }
+                    /* if we are clicking on a small box : */
+                    else{
+                        /* randomly animate all the other boxes.
+                        Math.floor(Math.random()*601) - 150 gives a random number between -150 and 450.
+                        This range is considering the initial lefts/tops of the elements. It's not the exact right
+                        range, since we would have to calculate the range based on each one of the boxes. Anyway, it
+                        fits our needs...
+                        */
+                        $('#littleBoxes > div').not($currentBox).each(function(){
+                            var $ele = $(this);
+                            $ele.stop().animate({
+                                'top' : (Math.floor(Math.random()*601) - 150) +'px',
+                                'left': (Math.floor(Math.random()*601) - 150) +'px',
+                                'opacity':0
+                            },800,function(){
+                                $(this).hide();
+                            });
+                        });
+
+                        /* expand the clicked one. Also, fadeIn the content (boxcontent)
+                        if you want it to fill the space of the littleBoxes container,
+                        then these are the right values */
+                        var newwidth     = 379;
+                        var newheight     = 379;
+                        $currentBox.stop().animate({
+                            'top'     : '0px',
+                            'left'    : '0px',
+                            'width' : newwidth +'px',
+                            'height': newheight+'px'
+                        },800,'easeOutBack',function(){
+                            current = $currentBox.index();
+                            $(this).find('.boxcontent').fadeIn();
+                        });
+
+
+                    }
+                    e.preventDefault();
+                });
+            });
+        </script>
+        <script>
+            $('.header').circleMagic({
+                elem: '.header',
+                radius: 35,
+                densety: .05,
+                color: 'rgba(255,255,255, .4)',
+    //            color: 'random',
+                clearOffset: .3
+            });
+        </script>
+        <script src="js/foodMenu.js"></script>
+        <script src="js/addHistoryInfo.js"></script>
+        <script src="js/setAnimate.js"></script>
+        <script src="js/setSwiper.js"></script>
+        <script type="text/javascript" src="js/baguetteBox.min.js"></script>
+        <script type="text/javascript" src="js/Ajax.js"></script>
+    </body>
+</html>
